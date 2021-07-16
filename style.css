@@ -24,7 +24,7 @@ header {
 #content {
 	width: 80vw;
 	height: 84vh;
-	background-color: #333;
+	background-color: #eee;
 }
 
 #sidebar {
@@ -37,10 +37,86 @@ header {
 	align-items: center;
 }
 
-#projects-container {
+button {
+	position: relative;
+	top: 5%;
+}
+
+#projects-title {
 	margin: 2%;
 }
 
+.modal {
+	position: fixed;
+	width: 20vw;
+	height: 20vw;
+	background-color: #eee;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	border-radius: 10px;
+}
+
+.modal.closed {
+	display: none;
+}
+
+.modal-overlay {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background-color: black;
+	opacity: 40%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.modal-overlay.closed {
+	display: none;
+}
+
+#close-btn {
+	position: fixed;
+	border: none;
+	height: 2rem;
+	width: 2rem;
+	right: 3%;
+	top: 3%;
+	background-color: transparent;
+}
+
+#close-btn:hover {
+	color: #4361ee;
+	cursor: pointer;
+}
+
+#project-form {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#project-name {
+	margin: 5%;
+	position: absolute;
+	top: 10%;
+	width: 10vw;
+}
+
+#project-description {
+	width: 10vw;
+	height: 10vh;
+}
+
+#enter {
+	font-size: 1vw;
+	position: absolute;
+	top: 75%;
+}
 footer {
 	width: 100vw;
 	height: 6vh;
