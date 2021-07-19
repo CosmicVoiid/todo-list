@@ -44,6 +44,7 @@ button {
 
 #projects-title {
 	margin: 2%;
+	width: 13vw;
 }
 
 .modal {
@@ -117,6 +118,75 @@ button {
 	position: absolute;
 	top: 75%;
 }
+
+.project {
+	width: 13vw;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 5%;
+}
+
+.project:hover {
+	cursor: pointer;
+}
+
+.project-exit {
+	border: none;
+	background-color: transparent;
+	z-index: 1;
+}
+
+.project-exit:hover {
+	cursor: pointer;
+	color: blue;
+}
+
+#content {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+#add-todo {
+	position: absolute;
+	right: 1%;
+	top: 12%;
+}
+
+.todo-item-container {
+	width: 50vw;
+	display: flex;
+	justify-content: space-between;
+}
+
+.check-container {
+	display: flex;
+	width: 30vw;
+}
+
+.check-todo {
+	margin-right: 20%;
+}
+
+.exit-todo {
+	border: none;
+}
+
+.exit-todo:hover {
+	cursor: pointer;
+	color: blue;
+}
+
+.edit-todo {
+	position: relative;
+	right: 70%;
+	border: none;
+}
+
+.edit-todo:hover {
+	cursor: pointer;
+}
+
 footer {
 	width: 100vw;
 	height: 6vh;
